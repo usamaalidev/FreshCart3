@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: "Encode Sans Expanded", sans-serif;
+  }
+}
+
+@layer components {
+  .form-control {
+    @apply w-full border-2 border-gray-400 border-opacity-50 outline-none px-2 py-1 rounded;
+  }
+
+  .btn-primary {
+    @apply px-3 py-1 rounded uppercase bg-primary text-white font-semibold text-sm hover:bg-opacity-80;
+  }
+
+  .alert-error {
+    @apply text-red-500 before:content-["*_"] before:align-middle mt-2 text-sm font-bold;
+  }
+
+  .badge {
+    @apply px-5 py-1 rounded-full font-semibold;
+  }
+}
